@@ -1,0 +1,143 @@
+/* Reset básico e configuração global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo do corpo da página */
+body {
+    background: linear-gradient(135deg, #1e1e1e, #000);
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0;
+    height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+.container {
+    max-width: 700px; /* Tamanho reduzido */
+    margin: 0;
+    padding: 30px; /* Ajuste de padding */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* Estilo do cabeçalho */
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem; /* Tamanho reduzido */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem; /* Tamanho reduzido */
+    color: #ddd;
+}
+
+/* Estilo das seções */
+.section {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 12px 24px;
+    background-color: #5022a7;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.1rem;
+    display: inline-block; /* Faz com que o botão respeite o alinhamento */
+}
+
+/* Efeito de foco e animação de brilho nos botões */
+button:hover {
+    background-color: #351c7d;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0) 60%);
+    transition: width 0.3s, height 0.3s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+/* Efeito de foco adicional */
+button:hover::before {
+    width: 0;
+    height: 0;
+}
+
+/* Estilo do botão de voltar */
+#voltar {
+    margin-top: 20px; /* Reduz a margem superior para alinhamento mais compacto */
+}
+
+/* Estilo dos botões dentro do container de voltar */
+#voltar button {
+    padding: 12px 24px;
+    background-color: #5022a7;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito de foco e animação de brilho no botão de voltar */
+#voltar button:hover {
+    background-color: #351c7d;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+#voltar button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0) 60%);
+    transition: width 0.3s, height 0.3s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+/* Efeito de foco adicional */
+#voltar button:hover::before {
+    width: 0;
+    height: 0;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Matérias_2.css">
+    <style>
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centraliza horizontalmente */
+            gap: 20px;
+        }
+
+        .card {
+            width: calc(33.33% - 40px);
+            margin-bottom: 20px;
+            background-color: #2c303a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 200ms;
+            cursor: pointer;
+            display: flex; /* Para centralizar verticalmente */
+            flex-direction: column; /* Para centralizar verticalmente */
+            justify-content: center; /* Para centralizar verticalmente */
+            align-items: center; /* Para centralizar verticalmente */
+        }
+
+        .card img {
+            width: 150px; /* Largura da imagem retangular */
+            height: 100px; /* Altura da imagem retangular */
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        /* Estilo do botão de voltar */
+        #voltar {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #voltar button {
+            background-color: #5022a7; /* Cor cinza */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #voltar button:hover {
+            background-color: #784bca; /* Cor mais clara ao passar o mouse */
+        }
+    </style>
+
+    <title>Atividade</title>
+</head>
+<body>
+    <h1>Atividades De Matemática</h1>
+    <h1>1° Trimestre</h1>
+    <div class="container">
+        <input id="more" type="checkbox">
+        <div class="cards">
+            <div class="card">
+                <h1>1° Trimestre</h1>
+                <img src="../images/video matemática.png" alt="Imagem da Atividade 1">
+                <p>Assunto: AV1 - Arcos E Ângulos.</p>
+                <p>Objetivo: O grupo devia produzir uma trilha dentro do ambiente da escola utilizando os conceitos de Arcos e  ngulos com todas as instruções e demais elementos necessários. Contextualização do objetivo da trilha com apresentação de uma breve história resumida e um esboço de um mapa da trilha com pontos de referência e localização e um vídeo apresentando a construção e prática com a trilha.</p>
+                <p><a href="https://youtu.be/iUveG2wiqdo?feature=shared">Link da Atividade</a></p>
+                <p>Competências e habilidades: C2, H5 e H16. </p>
+            </div>
+        </div>
+    </div>
+
+    <h1>2° Trimestre</h1>
+    <div class="container">
+
+        <input id="more" type="checkbox">
+
+        <div class="cards">
+           
+            <div class="card">
+                <h1>2° Trimestre</h1>
+                <img src="../images/FilmeQuebrandoABanca.PNG" alt="Imagem da Atividade 3">
+                <p>Assunto: Filme Quebrando a Banca </p>
+                <p>Objetivo: Eu percebi que neste trabalho, o objetivo é utilizar um filme como referência para explorar conceitos matemáticos de forma prática e contextualizada. A atividade foi dividida em três momentos: uma acolhida inicial, a exibição do filme "Quebrando a Banca", e um questionário relacionado ao filme.</p>
+                <p><a href="https://docs.google.com/document/d/1G5IstpmEz0Permm1cCjEicNyHNHaIxHWlxrDa3f35ts/edit?usp=sharing">Link da Atividade</a></p>
+                <p>Competências e habilidades: C5, H31 e H32</p>
+            </div>
+            
+            <div class="card">
+                <h1>2° Trimestre</h1>
+                <img src="../images/IlhaDeNegocios.PNG" alt="Imagem da Atividade 3">
+                <p>Assunto: AV2 - Banco Imobíliario</p>
+                <p>Objetivo: Bom eu entendi que o objetivo desse trabalho era criar uma versão personalizada do  jogo Banco Imobiliário com o tema de Florianópolis. E entendi que o grupo deveria adaptar o jogo e incluir ruas, regras novas, avenidas e bairros dessa cidade, em vez das localidades tradicionais de    São Paulo. </p>
+                <p><a href="https://www.canva.com/design/DAGJ_Eo2hB0/ceNB1PT7HvGaY6vnFoeV8Q/edit?utm_content=DAGJ_Eo2hB0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Link da Atividade</a></p>
+                <p>Competências e habilidades:  C5, H30, H31 e H32  </p>
+            </div>
+           
+        </div>
+    </div>
+
+    <!-- Botão de voltar -->
+    <section id="voltar">
+        <button onclick="voltarParaTrimestre2()">Voltar para áreas</button>
+    </section>
+
+    <script>
+        function voltarParaTrimestre2() {
+            window.location.href = '../Áreas/index.html';
+        }
+    </script>
+</body>
+</html>
