@@ -8,7 +8,10 @@ body {
     background-size: 1rem 1rem;
     background-attachment: fixed;
 }
-
+.bi-github::before {
+    content: "\f3ed";
+    color: white;
+}
 .container {
     max-width: 80vw;
     margin-block: 10vh;
