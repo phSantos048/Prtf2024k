@@ -6,7 +6,7 @@ function irParaHumanas2() {
     location.href = '../matérias trimestre 2/Ciências Humanas.html';
 }
 function irParaLinguagens2() {
-    location.href = '../matérias trimestre 2/index.html';
+    location.href = '../matérias trimestre 2/Linguagens.html';
 }
 function irParaMatematica2() {
     location.href = '../matérias trimestre 2/Matemática.html';
